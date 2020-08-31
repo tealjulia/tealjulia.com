@@ -1,0 +1,34 @@
+body{
+  background: #2b2c28;
+}
+
+#name {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 35px;
+  border: solid 2px #fffafb;
+}
+
+#container{
+  display: flex;
+}
+
+#name h1{
+  font-family: 'Roboto Mono', monospace;
+  /* font-weight: 700; */
+  letter-spacing: -4px;
+  font-size: 4em;
+  color: #7de2d1;
+  /* background: -webkit-linear-gradient(#066380, #69f3e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+
+{
+  h1 {
+
+  }
+}
