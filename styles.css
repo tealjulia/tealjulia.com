@@ -16,9 +16,9 @@ body{
 }
 
 #name h1{
-  font-family: 'Roboto Mono', monospace;
-  /* font-weight: 700; */
-  letter-spacing: -4px;
+  font-family: font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  /* letter-spacing: -4px; */
   font-size: 4em;
   color: #7de2d1;
   /* background: -webkit-linear-gradient(#066380, #69f3e1);
