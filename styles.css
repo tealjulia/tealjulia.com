@@ -37,7 +37,8 @@ body{
   /* display: flex;
   align-items: baseline;
   padding: 12px; */
-  height: 115vh;
+  height: 100vh;
+  margin-bottom: 2em;
 }
 
 #name h1{
