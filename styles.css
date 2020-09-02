@@ -29,7 +29,7 @@ body{
   z-index: 999;
 }
 
-#sidebar a {
+#sidebar a{
   color: #07b7bd;
   font-size: 2em;
   padding-top: .5em;
@@ -69,6 +69,12 @@ body{
   margin-right: 1em;
   font-size: 1em;
   margin-top: 10em;
+}
+
+#content a{
+  color: #d9ac56;
+  transform: scale(1.1);
+  text-shadow: 0 0 1px #fbeccf;
 }
 
 
