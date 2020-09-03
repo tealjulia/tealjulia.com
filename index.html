@@ -34,12 +34,21 @@
 
 <div class="wrapper">
 
-  <nav id="sidebar" class="sidebar sticky">
-    <a href="https://github.com/tealjulia" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/teal-larson-269a4050/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="./assets/Teal Larson Resume.docx" target="_blank"><i class="far fa-file"></i></a>
-    <a href="http://www.twitter.com/tealjulia" target="_blank"><i class="fab fa-twitter-square"></i></a>
-    </nav>
+  <nav class="navbar navbar-expand-lg bg-transparent navbar-dark bg-transparent" id="navbar">
+    <div class="navbar-brand"></div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span id="navbar-burger"><i class="fas fa-bars"></i></span>
+    </button>
+  
+    <div class="collapse navbar-collapse row" id="navbarNav">
+      <ul class="nav navbar-nav ml-auto">
+    <li class="nav-item"><a href="https://github.com/tealjulia" target="_blank"><i class="fab fa-github"></i></a></li>
+    <li class="nav-item"><a href="https://www.linkedin.com/in/teal-larson-269a4050/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+    <li class="nav-item"><a href="./assets/teal-larson-resume.docx" target="_blank"><i class="far fa-file"></i></a></li>
+    <li class="nav-item"><a href="http://www.twitter.com/tealjulia" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+    </ul>
+  </div>
+</nav>
 
 
    <!--add scrollspy navbar; transparent-->
@@ -50,29 +59,33 @@
 
 
 
-  <div id="about-me" class="d-flex align-items-center">
-      <div id="profile-image" class="col-lg-3 col-md-3 col-sm-4 col-xs-6 align-middle">
-      <img src="./assets/profile pic.jpg" class="img-fluid rounded align-middle" alt="Teal Larson">
+  <div id="about-me" class="d-md-flex d-lg-flex d-xl-flex justify-content-center">
+    
+    <div id="profile-image" class="col-lg-3 col-md-3 col-sm-4 col-xs-11 align-middle">
+    <img src="./assets/profile pic.jpg" class="img-fluid rounded align-middle" alt="Teal Larson">
       </div>
 
-    <div id="about-me-text" class="col-lg-8 col-md-8 col-sm-8 col-xs-12 align-middle">
+    <div id="about-me-text" class="col-lg-8 col-md-8 col-sm-7 col-xs-11 align-middle">
      <div id="about-me-title">
-       <h2>Well hello there, I'm Teal.</h2>
+       <h2>Hello there, I'm Teal.</h2>
      </div>
      <div id="about-me-body">
-       I am a full stack web developer based near Tacoma, WA.  I build websites and web applications from back to front utilizing current design principles.
+       <p>I am a full stack web developer based near Tacoma, WA.  I build websites and web applications from back to front utilizing current design and collaboration principles.  I like writing clean code and love seeing a project through from problem statement to deployment, with all the nitty gritty in between.</p>
+
+      <p>I am also a former middle school teacher/reading specialist/Teaching English to Speakers of other Languages teacher, a mom, a knitter, and a lover of books and slightly nerdy things.</p>
      </div>
     </div>
   </div>
 
+  <div class="col-11 align-middle mx-auto">
    <div id="projects" class="category">
     <h2>Projects</h2>
     <p><em>Code samples and additional projects can be found on my <a href="http://github.com/tealjulia">GitHub profile</a></em></p>
       <div class="container row mx-auto">
-          <div class="flip-card col-xl-3 col-lg-4 col-md-4 col-s-6 col-xs-12">
+          <div class="flip-card col-xl-4 col-lg-4 col-md-4 col-s-6 col-xs-12">
             <div class="flip-card-inner rounded">
-              <div class="flip-card-front rounded">
-                <img src="./assets/joyfulnoisebirth.JPG" alt="joyfulnoisebirth.com" style="width:100%;height:100%;" class="rounded">
+              <div class="flip-card-front rounded text-center">
+                <img src="./assets/joyfulnoisebirth.JPG" alt="joyfulnoisebirth.com" style="max-width:100%;max-height:100%; text-align: center;" class="rounded">
               </div>
               <div class="flip-card-back rounded">
                 <h4>JoyfulNoiseBirth.com</h4>
@@ -81,10 +94,10 @@
               </div>
             </div>
           </div>
-          <div class="flip-card col-xl-3 col-lg-4 col-md-4 col-s-6 col-xs-12">
+          <div class="flip-card col-xl-4 col-lg-4 col-md-4 col-s-6 col-xs-12">
               <div class="flip-card-inner rounded">
                 <div class="flip-card-front rounded">
-                  <img src="./assets/applanding.JPG" alt="App Landing Page" style="width:100%;height:100%;" class="rounded">
+                  <img src="./assets/applanding.JPG" alt="App Landing Page" style="max-width:100%;max-height:100%;" class="rounded">
                 </div>
                 <div class="flip-card-back rounded">
                   <h4>App Landing Page</h4>
@@ -93,10 +106,10 @@
                 </div>
               </div>
           </div>
-          <div class="flip-card col-xl-3 col-lg-4 col-md-4 col-s-6 col-xs-12">
+          <div class="flip-card col-xl-4 col-lg-4 col-md-4 col-s-6 col-xs-12">
             <div class="flip-card-inner rounded">
               <div class="flip-card-front rounded">
-                <img src="./assets/bbcfuturesnip.JPG" alt="Clone of BBC Future page" style="width:100%;height:100%;" class="rounded">
+                <img src="./assets/bbcfuturesnip.JPG" alt="Clone of BBC Future page" style="max-width:100%;max-height:100%;" class="rounded">
               </div>
               <div class="flip-card-back rounded">
                 <h4>BBC Future Clone Page</h4>
@@ -105,10 +118,10 @@
               </div>
             </div>
           </div>
-          <div class="flip-card col-xl-4 col lg-4 col-md-3 col-s-6 col-xs-12">
+          <div class="flip-card col-xl-4 col lg-4 col-md-4 col-s-6 col-xs-12">
             <div class="flip-card-inner rounded">
               <div class="flip-card-front rounded">
-                <img src="./assets/codeplayer.JPG" alt="JQuery CodePlayer" style="width:100%;height:100%;" class="rounded">
+                <img src="./assets/codeplayer.JPG" alt="JQuery CodePlayer" style="max-width:100%;max-height:100%;" class="rounded">
               </div>
               <div class="flip-card-back rounded">
                 <h4>jQuery CodePlayer</h4>
@@ -118,15 +131,15 @@
             </div>
           </div>
 
-
+        </div>
 
       </div>
   
   
    </div>
+   <div class="col-11 align-middle mx-auto">
    <div id="skills" class="category">
      <h2>Skills</h2>
-   </div>
   
    <div class="accordion col-sm-12 col-xs-12 col-md-10 col-lg-9" id="skillsAccordion">
 
@@ -319,15 +332,34 @@
                 <div class="card-body">
                   <h5 class="card-title"><h4>Washington State teaching endorsements</h4> in K-8, literacy, and English as a second language</h5>
                 </div>
+                </div>
               </div>
             </div>
             </div>
          </div>
-          
       </div>
     </div>
+</div>
 
-
+<footer>
+    <div class="text-center" id="connect-bar-text">
+      <h3>Let's connect!</h3>
+    </div>
+    <div class="navbar col-6 col-xs-9 mx-auto" id="footer-bar">
+    <div class="nav-item"><a href="https://github.com/tealjulia" target="_blank"><i class="fab fa-github"></i></a></div>
+    <div class="nav-item"><a href="https://www.linkedin.com/in/teal-larson-269a4050/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+    <div class="nav-item"><a href="./assets/teal-larson-resume.docx" target="_blank"><i class="far fa-file"></i></a></div>
+    <div class="nav-item"><a href="http://www.twitter.com/tealjulia" target="_blank"><i class="fab fa-twitter-square"></i></a></div>
+    <div class="nav-item"><a href="mailto:larson.teal@gmail.com">
+    <i class="far fa-envelope"></i></a></div>
+    </div>
+      <div class="text-center" id="copyright">
+      <h6>Site created by Teal Larson</h6>
+      <h6> &#169; 2020</h6>
+      
+    </div>
+  </footer>
+  </div>
 
 
 
@@ -343,6 +375,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
   </body>
 </html>
 
