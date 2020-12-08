@@ -1,415 +1,279 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <!-- meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <script src="https://kit.fontawesome.com/1ee1c3d7ba.js" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- <meta property="og:image" content="./assets/site-preview.png"> -->
+    <!-- <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024"> -->
 
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <!-- tailwind -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,600&family=Roboto&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/1ee1c3d7ba.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="tailwind.config.js"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@300;400;800&family=Pacifico&display=swap" rel="stylesheet">
 
-
-    <meta property="og:image" content="./assets/site-preview.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="1024">
 
 
 
 
     <title>Teal Larson</title>
   </head>
-
   <body>
 
-   
+    <!-- header -->
+      
+          <header id="top" class="w-full flex flex-col fixed bg-white top-0">
 
+            <nav id="site-menu" class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white shadow sm:shadow-none border-t-4 border-yellow-600">
+                <div class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center">
+                    <a href="#" class="no-underline py-1">
+                        <h1 class="text-lg tracking-widest">//TL</h1>
+                    </a>
+                    <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button" onclick="navToggle();" > 
+                      <i class="fas fa-bars"></i>
 
-<div class="wrapper">
+                    </button>
+                </div>
 
-  <nav class="navbar navbar-expand-lg bg-transparent navbar-dark bg-transparent" id="navbar">
-    <div class="navbar-brand"></div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span id="navbar-burger"><i class="fas fa-bars"></i></span>
-    </button>
-  
-    <div class="collapse navbar-collapse row" id="navbarNav">
-      <ul class="nav navbar-nav ml-auto">
-    <li class="nav-item"><a href="https://github.com/tealjulia" target="_blank"><i class="fab fa-github"></i></a></li>
-    <li class="nav-item"><a href="https://www.linkedin.com/in/teal-larson-269a4050/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-    <li class="nav-item"><a href="./assets/teal-larson-resume.docx" target="_blank"><i class="far fa-file"></i></a></li>
-    <li class="nav-item"><a href="http://www.twitter.com/tealjulia" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-    <li class="nav-item"><a href="mailto:larson.teal@gmail.com">
-    <i class="far fa-envelope"></i></a></li>
-    </ul>
-  </div>
-</nav>
+                <div id="menu" class="w-full 
+                sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 hidden">
+                    <a class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2" href="#about" onclick="navToggle();">About</a>
+                    <a class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="#projects" onclick="navToggle();">Projects</a>
+                    <a class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="#experience">Experience</a>
+                    <a class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="#contact">Contact</a>
+                </div>
+            </nav>
+          </header>
 
+          <!--Title-->
+          <div class="container max-w-4xl mx-auto md:pt-12 break-normal pt-16 text-center mx-10 mt-10">
+            
+            <p class="text-6xl md:text-9xl font-serif font-semi-bold">
+               Teal Larson
+            </p>
+            
 
-   <!--add scrollspy navbar; transparent-->
-   <div id="content">
-   <div id="name" class="text-center d-flex align-items-center justify-content-center"><h1>Teal Larson</h1></div> 
-
-
-
-
-
-  <div id="about-me" class="d-md-flex d-lg-flex d-xl-flex justify-content-center">
-    
-    <div id="profile-image" class="col-lg-3 col-md-3 col-sm-4 col-xs-11 align-middle">
-    <img src="./assets/profile pic.jpg" class="img-fluid rounded align-middle" alt="Teal Larson">
-      </div>
-
-    <div id="about-me-text" class="col-lg-8 col-md-8 col-sm-7 col-xs-11 align-middle">
-     <div id="about-me-title">
-       <h2>Hello there, I'm Teal.</h2>
-     </div>
-     <div id="about-me-body">
-       <p>I am a full stack web developer based near Tacoma, WA.  I build websites and web applications from back to front utilizing current design and collaboration principles.  I like writing clean code and love seeing a project through from problem statement to deployment, with all the nitty gritty in between.</p>
-
-      <p>I am also a former middle school teacher/reading specialist/Teaching English to Speakers of other Languages teacher, a mom, a knitter, and a lover of books and slightly nerdy things.</p>
-     </div>
+        </div>
     </div>
-  </div>
 
-  <div class="col-11 align-middle mx-auto">
-   <div id="projects" class="category">
-    <h2>Projects</h2>
-    <p><em>Code samples and additional projects can be found on my <a href="http://github.com/tealjulia">GitHub profile</a></em></p>
-      <div class="container row mx-auto">
-        <div class="flip-card col-xl-4 col-lg-4 col-md-4 col-s-6 col-xs-12">
-          <div class="flip-card-inner rounded">
-            <div class="flip-card-front rounded text-center">
-              <img src="./assets/tv-repositorium.png " alt="TVRepositorium" style="max-width:100%;max-height:100%;" class="rounded">
-            </div>
-            <div class="flip-card-back rounded">
-              <h4>TV Repositorium</h4>
-              <p>App built with four person team utilizing Angular. Personal contributions: Built "show-details" component including interfaces and services for interpreting JSON data from the API.  Crafted app's simple, accessible, responsive UI.</p>
-              <a href="https://github.com/tealjulia/tv-maze-app" target="_blank">Browse the Git Repo</a>
-            </div>
-          </div>
-        </div>
-        <div class="container row mx-auto">
-          <div class="flip-card col-xl-4 col-lg-4 col-md-4 col-s-6 col-xs-12">
-            <div class="flip-card-inner rounded">
-              <div class="flip-card-front rounded text-center">
-                <img src="./assets/construction.png " alt="Under Construction" style="max-width:100%;max-height:100%;" class="rounded">
+      <!--Container-->        
+      <div class="container px-4 md:px-0 max-w-6xl rounded  mt-40 mx-auto" id="about">
+        <div class="mx-0 sm:mx-6">
+            
+          <!--Lead Card-->
+          <div class="flex h-full rounded overflow-hidden bg-white flex-wrap content-center">
+            <!-- about box -->
+              <div class=" rounded-t mx-auto my-auto pl-4" >	
+                <img class="rounded-full shadow w-48 mx-auto" src="assets/profile-picture-square.jpg">
               </div>
-              <div class="flip-card-back rounded">
-                <h4>Current Build: Birth Center Tracker</h4>
-                <p>Developing an app for a local freestanding birth center to track room and provider availability and monitor supplies.  Utilizing NodeJS, MongoDB, Express.</p>
-                <a href="https://github.com/tealjulia/tv-maze-app" target="_blank">Browse the Git Repo</a>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card col-xl-4 col-lg-4 col-md-4 col-s-6 col-xs-12">
-              <div class="flip-card-inner rounded">
-                <div class="flip-card-front rounded">
-                  <img src="./assets/applanding.JPG" alt="App Landing Page" style="max-width:100%;max-height:100%;text-align:c" class="rounded">
-                </div>
-                <div class="flip-card-back rounded">
-                  <h4>App Landing Page</h4>
-                  <p>Mock app landing page built utilizing Bootstrap 4.5</p>
-                  <a href="http://tealjulia.github.io/mock-app-landing-page" target="_blank">See it live</a>
-                </div>
-              </div>
-          </div>
-          <div class="flip-card col-xl-4 col-lg-4 col-md-4 col-s-6 col-xs-12">
-            <div class="flip-card-inner rounded">
-              <div class="flip-card-front rounded">
-                <img src="./assets/bbcfuturesnip.JPG" alt="Clone of BBC Future page" style="max-width:100%;max-height:100%;" class="rounded">
-              </div>
-              <div class="flip-card-back rounded">
-                <h4>BBC Future Clone Page</h4>
-                <p>Clone of the BBC Future landing page built purely from HTML/CSS.</p>
-                <a href="http://tealjulia.github.io/bbc-clone-site" target="_blank">See it live</a>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card col-xl-4 col lg-4 col-md-4 col-s-6 col-xs-12">
-            <div class="flip-card-inner rounded">
-              <div class="flip-card-front rounded">
-                <img src="./assets/codeplayer.JPG" alt="JQuery CodePlayer" style="max-width:100%;max-height:100%;" class="rounded">
-              </div>
-              <div class="flip-card-back rounded">
-                <h4>jQuery CodePlayer</h4>
-                <p>Functioning coding playground for HTML/CSS/Javascript.  Built utilizing HTML, CSS, JavaScript, and jQuery.</p>
-                <a href="http://tealjulia.github.io/jquery-codeplayer" target="_blank">See it live</a>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card col-xl-4 col-lg-4 col-md-4 col-s-6 col-xs-12">
-            <div class="flip-card-inner rounded">
-              <div class="flip-card-front rounded text-center">
-                <img src="./assets/joyfulnoisebirth.JPG" alt="joyfulnoisebirth.com" style="max-width:100%;max-height:100%;" class="rounded">
-              </div>
-              <div class="flip-card-back rounded">
-                <h4>JoyfulNoiseBirth.com</h4>
-                <p>Joyful Noise Birth was my birth doula business founded in 2017.  Site was built utilizing WordPress.</p>
-                <a href="http://www.joyfulnoisebirth.com" target="_blank">See it live</a>
-              </div>
-            </div>
-          </div>
-        </div>
 
-      </div>
+              <!--about text-->
+              <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 bg-white rounded-t rounded-b-none px-6 overflow-hidden pt-6">
+                  <div class="w-full font-semibold text-2xl text-yellow-600 pb-1 font-sans-serif">About</div>
+                  <p class="text-gray-800 font-sans-serif text-base mb-2 text-xl font-roboto">
+                    I'm Teal Larson, a Full Stack Web Developer based near Tacoma, WA.
+                  </p>
+                  <p class="text-gray-800 font-sans-serif text-base mb-5">
+                    I wake up excited to tackle my latest projects.  Currently, I'm doing both freelance and volunteer work for everyone from local birth centers to history museums.  If I'm not coding, I am probably on a hike with my sons, whipping up something in the kitchen, or nose-deep in a book.
+                  </p>
+                  <p class="text-gray-800 font-sans-serif text-base mb-5">
+                    I believe in the power of programming to change the world for the better by helping people achieve more.  I enjoy building intuitive web apps that solve real-world needs.  My BA is in Language, Literacy, and Cultural Studies, and my understanding of human interaction and learning inform everything I build from UIs to APIs.
+                  </p>
+                  
+                </div>
   
-  
-   </div>
-   <div class="col-11 align-middle mx-auto">
-   <div id="skills" class="category">
-     <h2>Skills</h2>
-  
-   <div class="accordion col-sm-12 col-xs-12 col-md-10 col-lg-9" id="skillsAccordion">
-
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <h2 class="mb-0">
-          <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            Coding Languages/Libraries
-          </button>
-        </h2>
-      </div>
-      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#skillsAccordion">
-        <div class="card-body">
-          <div class="container">
-            <div class="card-columns text-center">
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">HTML</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">CSS</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">JavaScript</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">jQuery</h5>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card">
-                  <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                  <div class="card-body">
-                    <h5 class="card-title">AJAX</h5>
                   </div>
                 </div>
-                <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">Angular</h5>
-                </div>
               </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">React</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">NodeJS</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">Express</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">MongoDB</h5>
-                </div>
-              </div>
-            </div>
+  
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h2 class="mb-0">
-          <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Development, Design, and Collaboration
-          </button>
-        </h2>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#skillsAccordion">
-        <div class="card-body">
-          
-          <div class="container">
-            <div class="card-columns text-center">
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">MVC design pattern</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">GitHub source control</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">Virtual scrum meetings (Zoom, Team Meetings)</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">Slack channels</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">Kanban boards</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">Remote collaboration</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">Problem/solution statements</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">Leading team professional development</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">Mobile-first design</h5>
-                </div>
-              </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title">Designing for accessiblity (semantic HTML, contrast, etc.)</h5>
-                </div>
-              </div>
+  
+  
+          <!--Projects Container-->
+          <div class="container px-0 lg:max-w-5xl p-5 rounded bg-gray-200 mt-20 mx-auto" id="projects">
+            <div class="mx-0 sm:mx-6">
+                
+              <!--Projects Card-->
+              <div class="flex h-full rounded overflow-hidden bg-white flex-wrap content-center">
+                
+                <!-- Projects title -->
+          <div class="flex flex-wrap justify-between py-4 mt-14 mx-6">
+            <div class="font-semibold text-2xl text-yellow-600 pb-1 font-sans-serif">Projects
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+              
+              <!--connexion -->
+              <div class="box-border w-3/4 md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink rounded">
+                <div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
+                   <img src="./assets/connexion_mockup.png" class="rounded-t pb-6 mx-auto">
+                      <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                        REACT, NODEJS, EXPRESS, MONGODB, JAVASCRIPT, HTML, CSS, BOOTSTRAP, REDUX
+                      </p>
+                      <div class="w-full font-bold text-xl text-gray-900 px-6 pt-2">
+                        CONNEXION
+                      </div>
+                  <div class="pt-3 flex items-center justify-around">
+                    <a href="https://github.com/tealjulia/Connexion" target="_blank"><div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
+                      Browse Code</div></a>
 
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h2 class="mb-0">
-          <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Education
-          </button>
-        </h2>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#skillsAccordion">
+                    <a href="https://limitless-bayou-76936.herokuapp.com/" target="_blank"><div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
+                      See it Live</div></a>
+                  </div>
+                </div>
+              </div>
 
-        <div class="card-body">
-          <!-- <div class="container row"> -->
-            <div class="row align-items-center">
-            <div class="card-columns text-center">
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title"><h4>KAL Academy</h4> Web Development Full Stack Bootcamp (grad. 11/2020)</h5>
+              <!-- whos.in -->
+              <div class="box-border countainer w-3/4 md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink overflow-hidden rounded">
+                <div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
+                    <img src="./assets/coming-soon-cropped.png" class="h-36 rounded-t pb-3 mx-auto">
+                    <p class="w-full text-gray-600 text-xs md:text-sm px-6">REACT, NODEJS, EXPRESS, MONGODB, JAVASCRIPT, HTML, CSS, BOOTSTRAP, REDUX </p>
+                    <div class="w-full font-bold text-xl text-gray-900 px-6">WHOS.IN</div>
+                </div>
+                <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+                  <div class="flex items-center justify-around">
+                    <a href="https://github.com/tealjulia/whos.in" target="_blank">
+                    <div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
+                    Browse Code</div></a>
+                  </div>
+                </div>
                 </div>
               </div>
               
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title"><h4>Coding self-study</h4>(FreeCodeCamp.org, HackerRank, Udemy, Coursera)</h5>
+              <!--1JQuery Codeplayer -->
+              <div class="box-border container w-full md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink rounded">
+                <div class="flex-1 bg-white overflow-hidden shadow-lg">
+                    <img src="./assets/jquery-codeplayer-mockup.png" class="mx-auto rounded-t pb-6">
+                    <p class="w-full text-gray-600 text-xs md:text-sm px-6">JAVASCRIPT, JQUERY, HTML, CSS</p>
+                    <div class="w-full font-bold text-xl text-gray-900 px-6">Codeplayer (Coding Sandbox)</div>
+                    
+                <div class="pt-3 flex items-center justify-around">
+                  <div class="flex items-center justify-around">
+                    <a href="https://github.com/tealjulia/jquery-codeplayer" target="_blank"><div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
+                      Browse Code</div></a>
+                      <!-- <div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
+                        See it Live</div> -->
+                  </div>
+                </div>
                 </div>
               </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title"><h4>Western Washington University</h4><h6><em>Magna Cum Laude</em></h6> BAEd Language, Literacy, and Cultural Studies</h5>
+    
+              <!--TVMaze App -->
+              <div class="box-border container w-full md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+                    <img src="./assets/tvmaze-mockup.png" class="rounded-t pb-6">
+                    <p class="w-full text-gray-600 text-xs md:text-sm px-6">ANGULAR, TYPESCRIPT, HTML, CSS, MATERIAL UI</p>
+                    <div class="w-full  font-bold text-xl text-gray-900 px-6">TV Repositorium</div>
+                    
+                <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+                  <div class="flex items-center justify-around">
+                    <div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> Browse Code</div>
+                    <!-- <div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> See it Live</div> -->
+                  </div>
                 </div>
               </div>
-              <div class="card">
-                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                <div class="card-body">
-                  <h5 class="card-title"><h4>Washington State teaching endorsements</h4> in K-8, literacy, and English as a second language</h5>
-                </div>
-                </div>
               </div>
             </div>
+          </div>
+              <!--spacer for lg size-->
+              <div class="lg: w-2/3"></div>
+          </div>
+
+          <!--Experience Container-->
+          <div class="container px-0 max-w-80 p-5 rounded lg:max-w-5xl bg-gray-200 mt-20 mx-auto" id="experience">
+            <div class="mx-0 sm:mx-6">
+                
+              <!--Experience card-->
+          <div class="flex h-full rounded overflow-hidden bg-white flex-wrap content-center">
+            <!--experience text-->
+              <div class="w-full flex flex-col flex-grow flex-shrink" id="experience">
+                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden pt-6">
+                  
+                  <div class="w-full font-semibold text-2xl text-yellow-600 pb-1 font-sans-serif">Experience</div>
+                  <script src="https://gist.github.com/tealjulia/58f6291edb2e1951416420c24081676b.js"></script>             
+                </div>
+  
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <!--Contact-->	
+          <div class="container font-sans bg-green-500 rounded mt-8 md:p-20 lg:max-w-5xl mx-auto text-center" id="contact">
+            <div class="pt-3 font-semibold text-2xl mx-auto">
+              Let's connect!
             </div>
-         </div>
+            <!--contact buttons-->
+            <div class="flex flex-col justify-around items-center mx-auto">
+              <div class="flex flex-row sm:flex-none flex-no-wrap justify-around items-center">
+                <div class="m-10 text-3xl 
+                border-b-2
+                border-transparent
+                hover:border-opacity-100 hover:border-yellow-600">
+                  <a href="https://github.com/tealjulia" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+
+                <div class="m-10 text-3xl 
+                border-b-2
+                border-transparent
+                hover:border-opacity-100 hover:border-yellow-600">
+                  <a href="https://www.linkedin.com/in/teal-larson-269a4050/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </div>
+                <div class="m-10 text-3xl 
+                border-b-2
+                border-transparent
+                hover:border-opacity-100 hover:border-yellow-600">
+                  <a href="./assets/teal-larson-resume.docx" target="_blank">
+                    <i class="far fa-file"></i>
+                  </a>
+                </div>
+
+                <div class="m-10 text-3xl 
+                border-b-2
+                border-transparent
+                hover:border-opacity-100 hover:border-yellow-600">
+                  <a href="http://www.twitter.com/tealjulia" target="_blank">
+                    <i class="fab fa-twitter-square"></i>
+                  </a>
+                </div>
+                <div class="m-10 text-3xl 
+                border-b-2
+                border-transparent
+                hover:border-opacity-100 hover:border-yellow-600">
+                  <a href="mailto:larson.teal@gmail.com">
+                  <i class="far fa-envelope"></i>
+                  </a></div>
+              </div>
+          </div>
+        </div>
       </div>
+    
     </div>
-</div>
+    </div>
+
 
 <footer>
-    <div class="text-center" id="connect-bar-text">
-      <h3>Let's connect!</h3>
-    </div>
-    <div class="navbar col-6 col-xs-9 mx-auto" id="footer-bar">
-    <div class="nav-item"><a href="https://github.com/tealjulia" target="_blank"><i class="fab fa-github"></i></a></div>
-    <div class="nav-item"><a href="https://www.linkedin.com/in/teal-larson-269a4050/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
-    <div class="nav-item"><a href="./assets/teal-larson-resume.docx" target="_blank"><i class="far fa-file"></i></a></div>
-    <div class="nav-item"><a href="http://www.twitter.com/tealjulia" target="_blank"><i class="fab fa-twitter-square"></i></a></div>
-    <div class="nav-item"><a href="mailto:larson.teal@gmail.com">
-    <i class="far fa-envelope"></i></a></div>
-    </div>
-      <div class="text-center" id="copyright">
-      <h6>Site created by Teal Larson</h6>
-      <h6> &#169; 2020</h6>
+    
+      <div class="text-center text-xs p-2" id="copyright">
+      Site created by Teal Larson
+       &#169; 2020
       
     </div>
   </footer>
   </div>
-
-
-
-
-
-
-
-
-
-</div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-
+    
   </body>
 </html>
 
