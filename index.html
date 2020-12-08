@@ -29,47 +29,43 @@
   </head>
   <body>
 
-    <!-- header -->
+    <!-- nav header -->
       
-          <header id="top" class="w-full flex flex-col fixed bg-white top-0">
+    <header id="top" class="w-full flex flex-col fixed bg-white top-0">
 
-            <nav id="site-menu" class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white shadow sm:shadow-none border-t-4 border-yellow-600">
-                <div class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center">
-                    <a href="#" class="no-underline py-1">
-                        <h1 class="text-lg tracking-widest">//TL</h1>
-                    </a>
-                    <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button" onclick="navToggle();" > 
-                      <i class="fas fa-bars"></i>
+      <nav id="site-menu" class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white shadow sm:shadow-none border-t-4 border-yellow-600">
+          <div class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center">
+              <a href="#" class="no-underline py-1">
+                  <h1 class="text-lg tracking-widest">//TL</h1>
+              </a>
+              <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button" onclick="navToggle();" > 
+                <i class="fas fa-bars"></i>
 
-                    </button>
-                </div>
+              </button>
+          </div>
 
-                <div id="menu" class="w-full 
-                sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 hidden">
-                    <a class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2" href="#about" onclick="navToggle();">About</a>
-                    <a class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="#projects" onclick="navToggle();">Projects</a>
-                    <a class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="#experience">Experience</a>
-                    <a class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="#contact">Contact</a>
-                </div>
-            </nav>
-          </header>
+          <div id="menu" class="w-full 
+          sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 hidden">
+              <a class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2" href="#about" onclick="navToggle();">About</a>
+              <a class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="#projects" onclick="navToggle();">Projects</a>
+              <a class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="#experience" onclick="navToggle();">Experience</a>
+              <a class="text-dark hover:text-red text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="#contact" onclick="navToggle();">Contact</a>
+          </div>
+      </nav>
+    </header>
 
-          <!--Title-->
-          <div class="container max-w-4xl mx-auto md:pt-12 break-normal pt-16 text-center mx-10 mt-10">
-            
-            <p class="text-6xl md:text-9xl font-serif font-semi-bold">
-               Teal Larson
-            </p>
-            
-
-        </div>
+    <!--Hero text-->
+    <div class="container max-w-4xl mx-auto md:pt-12 break-normal pt-16 text-center mx-10 mt-10">
+      <p class="text-6xl md:text-9xl font-serif font-semi-bold">
+          Teal Larson
+      </p>
     </div>
 
-      <!--Container-->        
+      <!--Content Container-->        
       <div class="container px-4 md:px-0 max-w-6xl rounded  mt-40 mx-auto" id="about">
         <div class="mx-0 sm:mx-6">
             
-          <!--Lead Card-->
+          <!--About Card-->
           <div class="flex h-full rounded overflow-hidden bg-white flex-wrap content-center">
             <!-- about box -->
               <div class=" rounded-t mx-auto my-auto pl-4" >	
@@ -80,22 +76,17 @@
               <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
                 <div class="flex-1 bg-white rounded-t rounded-b-none px-6 overflow-hidden pt-6">
                   <div class="w-full font-semibold text-2xl text-yellow-600 pb-1 font-sans-serif">About</div>
-                  <p class="text-gray-800 font-sans-serif text-base mb-2 text-xl font-roboto">
-                    I'm Teal Larson, a Full Stack Web Developer based near Tacoma, WA.
-                  </p>
-                  <p class="text-gray-800 font-sans-serif text-base mb-5">
-                    I wake up excited to tackle my latest projects.  Currently, I'm doing both freelance and volunteer work for everyone from local birth centers to history museums.  If I'm not coding, I am probably on a hike with my sons, whipping up something in the kitchen, or nose-deep in a book.
-                  </p>
-                  <p class="text-gray-800 font-sans-serif text-base mb-5">
-                    I believe in the power of programming to change the world for the better by helping people achieve more.  I enjoy building intuitive web apps that solve real-world needs.  My BA is in Language, Literacy, and Cultural Studies, and my understanding of human interaction and learning inform everything I build from UIs to APIs.
-                  </p>
-                  
-                </div>
-  
-                  </div>
+                    <p class="text-gray-800 font-sans-serif text-base mb-2 text-xl font-roboto">
+                      I'm Teal Larson, a Full Stack Web Developer based near Tacoma, WA.
+                    </p>
+                    <p class="text-gray-800 font-sans-serif text-base mb-5">
+                      I wake up excited to tackle my latest projects.  Currently, I'm doing both freelance and volunteer work for everyone from local birth centers to history museums.  If I'm not coding, I am probably on a hike with my sons, whipping up something in the kitchen, or nose-deep in a book.
+                    </p>
+                    <p class="text-gray-800 font-sans-serif text-base mb-5">
+                      I believe in the power of programming to change the world for the better by helping people achieve more.  I enjoy building intuitive web apps that solve real-world needs.  My BA is in Language, Literacy, and Cultural Studies, and my understanding of human interaction and learning inform everything I build from UIs to APIs.
+                    </p>  
                 </div>
               </div>
-  
           </div>
   
   
@@ -105,108 +96,122 @@
                 
               <!--Projects Card-->
               <div class="flex h-full rounded overflow-hidden bg-white flex-wrap content-center">
-                
+                <div class="flex flex-wrap justify-between py-4 mt-14 mx-6">
                 <!-- Projects title -->
-          <div class="flex flex-wrap justify-between py-4 mt-14 mx-6">
-            <div class="font-semibold text-2xl text-yellow-600 pb-1 font-sans-serif">Projects
-            </div>
-              
-              <!--connexion -->
-              <div class="box-border w-3/4 md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink rounded">
-                <div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
-                   <img src="./assets/connexion_mockup.png" class="rounded-t pb-6 mx-auto">
+                  <div class="font-semibold text-2xl text-yellow-600 pb-1 w-full font-sans-serif">
+                    Projects
+                  </div>
+                
+                  
+                  <!--connexion -->
+                  <div class="box-border container w-3/4 md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink rounded">
+                    <div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
+                      <img src="./assets/connexion_mockup.png" class="rounded-t pb-6 mx-auto">
                       <p class="w-full text-gray-600 text-xs md:text-sm px-6">
                         REACT, NODEJS, EXPRESS, MONGODB, JAVASCRIPT, HTML, CSS, BOOTSTRAP, REDUX
                       </p>
-                      <div class="w-full font-bold text-xl text-gray-900 px-6 pt-2">
+                      <div class="w-full font-bold text-xl text-gray-900 px-6">
                         CONNEXION
                       </div>
-                  <div class="pt-3 flex items-center justify-around">
-                    <a href="https://github.com/tealjulia/Connexion" target="_blank"><div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
-                      Browse Code</div></a>
+                      <div class="p-6 flex mt-auto bg-white items-center justify-around overflow-hidden">
+                        <a href="https://github.com/tealjulia/Connexion" target="_blank"><div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
+                          Browse Code</div></a>
 
-                    <a href="https://limitless-bayou-76936.herokuapp.com/" target="_blank"><div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
-                      See it Live</div></a>
+                        <a href="https://limitless-bayou-76936.herokuapp.com/" target="_blank"><div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
+                          See it Live</div></a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <!-- whos.in -->
-              <div class="box-border countainer w-3/4 md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink overflow-hidden rounded">
-                <div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
-                    <img src="./assets/coming-soon-cropped.png" class="h-36 rounded-t pb-3 mx-auto">
-                    <p class="w-full text-gray-600 text-xs md:text-sm px-6">REACT, NODEJS, EXPRESS, MONGODB, JAVASCRIPT, HTML, CSS, BOOTSTRAP, REDUX </p>
-                    <div class="w-full font-bold text-xl text-gray-900 px-6">WHOS.IN</div>
-                </div>
-                <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
-                  <div class="flex items-center justify-around">
-                    <a href="https://github.com/tealjulia/whos.in" target="_blank">
-                    <div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
-                    Browse Code</div></a>
-                  </div>
-                </div>
-                </div>
-              </div>
-              
-              <!--1JQuery Codeplayer -->
-              <div class="box-border container w-full md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink rounded">
-                <div class="flex-1 bg-white overflow-hidden shadow-lg">
-                    <img src="./assets/jquery-codeplayer-mockup.png" class="mx-auto rounded-t pb-6">
-                    <p class="w-full text-gray-600 text-xs md:text-sm px-6">JAVASCRIPT, JQUERY, HTML, CSS</p>
-                    <div class="w-full font-bold text-xl text-gray-900 px-6">Codeplayer (Coding Sandbox)</div>
+                  <!-- whos.in -->
+                  <div class="box-border countainer w-3/4 md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink overflow-hidden rounded">
+                    <div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
+                        <img src="./assets/coming-soon-cropped.png" class=" rounded-t pb-3 mx-auto">
+                        <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                            REACT, NODEJS, EXPRESS, MONGODB, JAVASCRIPT, HTML, CSS, BOOTSTRAP, REDUX 
+                        </p>
+                        <div class="w-full font-bold text-xl text-gray-900 px-6">
+                          WHOS.IN
+                        </div>
+
+                        <div class="mt-auto bg-white overflow-hidden p-6 flex items-center justify-around">
                     
-                <div class="pt-3 flex items-center justify-around">
-                  <div class="flex items-center justify-around">
-                    <a href="https://github.com/tealjulia/jquery-codeplayer" target="_blank"><div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
-                      Browse Code</div></a>
-                      <!-- <div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
-                        See it Live</div> -->
+                          <a href="https://github.com/tealjulia/whos.in" target="_blank">
+                            <div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
+                            Browse Code</div>
+                          </a>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  <!--1JQuery Codeplayer -->
+                  <div class="box-border container w-3/4 md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink rounded overflow-hidden">
+                    <div class="flex-1 bg-white overflow-hidden shadow-lg">
+                        <img src="./assets/jquery-codeplayer-mockup.png" class="mx-auto rounded-t pb-6">
+                        <p class="w-full text-gray-600 text-xs md:text-sm px-6">JAVASCRIPT, JQUERY, HTML, CSS</p>
+                        <div class="w-full font-bold text-xl text-gray-900 px-6">
+                          Codeplayer (Coding Sandbox)
+                        </div>
+                        
+                    <div class="p-6 flex mt-auto bg-white overflow hidden items-center justify-around">
+                        <a href="https://github.com/tealjulia/jquery-codeplayer" target="_blank"><div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
+                          Browse Code</div></a>
+                        <a href="assets/4-jquery" target="_blank"><div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
+                            See it Live</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!--TVMaze App -->
+                  <div class="box-border container w-3/4 md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow overflow-hidden rounded flex-shrink">
+                    <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+                        <img src="./assets/tvmaze-mockup.png" class="rounded-t pb-3 mx-auto">
+                        <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                          ANGULAR, TYPESCRIPT, HTML, CSS, MATERIAL UI
+                        </p>
+                        <div class="w-full  font-bold text-xl text-gray-900 px-6">
+                          TV Repositorium
+                        </div>
+                        
+                        <div class="mt-auto bg-white overflow-hidden p-6 flex items-center justify-around">                
+                          <a href="https://github.com/tealjulia/tv-maze-app" target="_blank">
+                            <div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> 
+                              Browse Code
+                            </div>
+                            <!-- <div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> See it Live</div> -->
+                        </div>
+                    </div>
                   </div>
                 </div>
-                </div>
-              </div>
-    
-              <!--TVMaze App -->
-              <div class="box-border container w-full md:w-1/2 lg:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
-                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-                    <img src="./assets/tvmaze-mockup.png" class="rounded-t pb-6">
-                    <p class="w-full text-gray-600 text-xs md:text-sm px-6">ANGULAR, TYPESCRIPT, HTML, CSS, MATERIAL UI</p>
-                    <div class="w-full  font-bold text-xl text-gray-900 px-6">TV Repositorium</div>
-                    
-                <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
-                  <div class="flex items-center justify-around">
-                    <div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> Browse Code</div>
-                    <!-- <div class="text-yellow-600 font-medium p-2 hover:text-black hover:underline"> See it Live</div> -->
-                  </div>
-                </div>
-              </div>
               </div>
             </div>
-          </div>
+
               <!--spacer for lg size-->
-              <div class="lg: w-2/3"></div>
+            <div class="lg: w-2/3"></div>
+          
           </div>
 
-          <!--Experience Container-->
-          <div class="container px-0 max-w-80 p-5 rounded lg:max-w-5xl bg-gray-200 mt-20 mx-auto" id="experience">
+          <!-- Experience Container -->
+          <div class="container px-0 max-w-5xl p-5 rounded bg-gray-200 mt-20 mx-auto" id="experience">
             <div class="mx-0 sm:mx-6">
                 
               <!--Experience card-->
-          <div class="flex h-full rounded overflow-hidden bg-white flex-wrap content-center">
-            <!--experience text-->
-              <div class="w-full flex flex-col flex-grow flex-shrink" id="experience">
-                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden pt-6">
-                  
-                  <div class="w-full font-semibold text-2xl text-yellow-600 pb-1 font-sans-serif">Experience</div>
-                  <script src="https://gist.github.com/tealjulia/58f6291edb2e1951416420c24081676b.js"></script>             
-                </div>
-  
-                  </div>
-                </div>
+              <div class="flex h-full rounded overflow-hidden bg-white flex-wrap content-center">
+                <div class="flex flex-wrap justify-between py-4 mt-14 mx-6">
+                  <!--experience title-->
+                    <div class="w-full font-semibold text-2xl text-yellow-600 pb-3 font-sans-serif">
+                      Experience
+                    </div>
+                    <div class="max-w-100 py-2">
+                    <script src="https://gist.github.com/tealjulia/58f6291edb2e1951416420c24081676b.js"></script>             
+                    </div>
+                </div> 
               </div>
+            </div>
           </div>
 
-          <!--Contact-->	
+          <!--Contact container-->	
           <div class="container font-sans bg-green-500 rounded mt-8 md:p-20 lg:max-w-5xl mx-auto text-center" id="contact">
             <div class="pt-3 font-semibold text-2xl mx-auto">
               Let's connect!
@@ -256,12 +261,11 @@
                   <i class="far fa-envelope"></i>
                   </a></div>
               </div>
+            </div>
           </div>
+
         </div>
       </div>
-    
-    </div>
-    </div>
 
 
 <footer>
